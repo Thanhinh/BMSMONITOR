@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DO AN TOT NGHIEP </title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="css.css">
+	<link rel="icon" type="image/x-icon" href="./img/LOGO.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="padding: 20px">
+<h1 class="title">
+    <img class="anh3" src="./img/logook.png" alt="">
+    <!-- <img class="anh1" src="./img/LOGO2.png" alt="">
+    <img  class="anh2" src="./img/logoclcll.png" alt=""> -->
+</h1>
+<div class="four_inf">
+    <div class="tieude"> TRANG CHỦ  </div>   
+    <div class="tieude"> MFM383A  </div> 
+    <div class="tieude"> COMAP  </div> 
+    <div class="tieude"> PHỤ LỤC  </div> 
+
+</div>
+<div class="tabContainer">
+    <div class="buttonContainer">
+        <button onclick="showPanel(0,'#ffffff')">TRANG CHỦ</button>
+        <button onclick="showPanel(1,'#ffffff')">ĐỒ THỊ</button>
+        <button onclick="showPanel(2,'#ffffff')">THÔNG SỐ</button>
+        <button onclick="showPanel(3,'#ffffff')">ĐỒ THỊ </button>
+        <button onclick="showPanel(4,'#ffffff')">THÔNG SỐ</button>
+        <button onclick="showPanel(5,'#ffffff')">ĐỒ THỊ</button>
+        <button onclick="showPanel(6,'#ffffff')">LỊCH SỬ</button>
+        <button onclick="showPanel(7,'#ffffff')">NHÓM TÁC GIẢ</button>
+
+    </div>
+    <div class="tabPanel">
+        <div style="padding-bottom: 40px;  ;"  class="detai" >
+            <h1 style="margin-top: 0%;" >ĐỒ ÁN TỐT NGHIỆP    </h1>
+            <h2 style="font-size: 40px;">ỨNG DỤNG BMS GIÁM SÁT NGUỒN DỰ PHÒNG MÁY PHÁT VÀ ATS</h2>
+
+        </div>
+        <div class="tong">
+            <div class="nguon_dang_dung">
+                <div class="MF">
+                    MÁY PHÁT
+                </div>
+                <div >
+                    <button class="btn-on">ON</button>
+                    <button class="btn-off">OFF</button>
+                </div>           
+            </div>
+            <div class="nguon_dang_dung">
+                <div class="nguondung" >
+                    <h2>NGUỒN ĐANG DÙNG : <span id="dungnguon" > </span>  </h2>
+                </div>         
+            </div>
+            <div class="nguon_dang_dung">
+                <div class="MF">
+                    QUẠT HÚT
+                </div>
+                <div >
+                    <button class="btn-onn">ON</button>
+                    <button class="btn-offf">OFF</button>
+                </div>           
+            </div>
+        </div>
+                <div class="atscontroller" >
+        
+                    <div  class="minhhoa"  >
+                        <H2> NGUỒN LƯỚI     
+                                          
+                        </H2>   
+                        <div class="icon_off">
+                            <div class="iconc">
+                                <i id="circleIcon1" class="fa-solid fa-circle"></i>
+                                <span>R</span>
+                            </div>
+                            <div class="iconc">
+                                <i id="circleIcon2" class="fa-solid fa-circle"></i> 
+                                <span>S</span>
+                            </div>
+                            <div class="iconc">
+                                <i id="circleIcon3" class="fa-solid fa-circle"></i> 
+                                <span>T</span>
+                            </div> 
+                        </div>      
+                            <div  class="ats"  >
+                                <img  class="img_ats" src="./img/cp2.png" alt="">
+                                <div class="giatri_NL"   >
+                                    <div class="giatri_NL1" >
+                                        <div class="giatripha_NL" >
+                                            <h2> Điện áp R_N: <span id="dienapV1N_NL" >000 </span> V </h2>
+                                            <h2> Điện áp S_N: <span id="dienapV2N_NL" >000 </span> V </h2>
+                                            <h2> Điện áp T_N: <span id="dienapV3N_NL" >000 </span> V </h2>
+                                        </div>
+                                        <div class=" giatriday_NL" >   
+                                            <h2> Điện áp R_S: <span id="dienapV12_NL" >000 </span> V </h2>
+                                            <h2> Điện áp S_T: <span id="dienapV23_NL" >000 </span> V </h2>
+                                            <h2> Điện áp R_T: <span id="dienapV13_NL" >000 </span> V </h2>
+                                        </div>
+                                    </div>
+                                    <div class="tanso_1" >
+                                        <h2> Tần số F : <span id="tansoF_NL" >000 </span> HZ </h2>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+        
+                    <div  class="minhhoa1"  >
+                        <H2>NGUỒN MÁY PHÁT</H2> 
+                        <div class="icon_off">
+                            <div class="iconc">
+                                <i id="circleIcon4" class="fa-solid fa-circle"></i>
+                                <span>U</span>
+                            </div>
+                            <div class="iconc">
+                                <i id="circleIcon5" class="fa-solid fa-circle"></i> 
+                                <span>V</span>
+                            </div>
+                            <div class="iconc">
+                                <i id="circleIcon6" class="fa-solid fa-circle"></i> 
+                                <span>W</span>
+                            </div> 
+                        </div>                
+                        <div  class="gen"  >
+                            <img class="img_gen" src="./img/gen.png" alt="">
+                            <div  class="giatri_gen"  >
+                                <div class="giatri_gen1" >
+                                    <div class="giatripha_gen" >
+                                        <h2> Điện áp U_N: <span id="dienapV1N_gen" >000 </span> V </h2>
+                                        <h2> Điện áp V_N: <span id="dienapV2N_gen" >000 </span> V </h2>
+                                        <h2> Điện áp W_N: <span id="dienapV3N_gen" >000 </span> V </h2>
+                                    </div>
+                                    <div class="giatriday_gen" >
+                                        <h2> Điện áp U_V: <span id="dienapV12_gen" >000 </span> V </h2>
+                                        <h2> Điện áp V_W: <span id="dienapV23_gen" >000 </span> V </h2>
+                                        <h2> Điện áp U_W: <span id="dienapV13_gen" >000 </span> V </h2>
+                                    </div>
+                                </div>
+                                <div  class="tansogen1"  >
+                                    <h2> Tần số F : <span id="tansoF_gen" >000 </span> HZ </h2>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </div>
+            </div>
+            <div class="tabPanel">
+        
+        
+                <div class="dothi">
+                    <!--///////////////////////////////////////////////  -->
+                   <div class=" dothi_mfm_1">
+                    <div    class="dothi_ats_VPHASE">
+                        <canvas id="myChart_ats_VPHASE"></canvas>
+                        <div id="time-label_ats_VPHASE"></div>
+                        <label for="update-interval">Cập nhật đồ thị mỗi:</label>
+                        <select name="update-interval" id="update-interval" onchange="updateInterval_ats_VPHASE(this.value)">
+                            <option value="5">5 giây</option>
+                            <option value="10">10 giây</option>
+                            <option value="3600">1 giờ </option>
+                          </select>
+                    </div>  
+                    <div    class="dothi_ats_VWIRE">
+                        <canvas id="myChart_ats_VWIRE"></canvas>
+                        <div id="time-label_ats_VWIRE"></div>
+                        <label for="update-interval">Cập nhật đồ thị mỗi:</label>
+                        <select name="update-interval" id="update-interval" onchange="updateInterval_ats_VWIRE(this.value)">
+                            <option value="5">5 giây</option>
+                            <option value="10">10 giây</option>
+                            <option value="3600">1 giờ </option>
+                          </select>
+                    </div>             
+                    </div>
+                    <div class=" dothi_mfm_1">
+                        <div    class="dothi_genvphase">
+                            <canvas id="myChart_genvphase"></canvas>
+                            <div id="time-label_genvphase"></div>
+                            <label for="update-interval">Cập nhật đồ thị mỗi:</label>
+                            <select name="update-interval" id="update-interval" onchange="updateInterval_genvphase(this.value)">
+                                <option value="5">5 giây</option>
+                                <option value="10">10 giây</option>
+                                <option value="3600">1 giờ </option>
+                              </select>
+                        </div>
+                        <div    class="dothi_genvwire">
+                            <canvas id="myChart_genvwire"></canvas>
+                            <div id="time-label_genvwire"></div>
+                            <label for="update-interval">Cập nhật đồ thị mỗi:</label>
+                            <select name="update-interval" id="update-interval" onchange="updateInterval_genvwire(this.value)">
+                                <option value="5">5 giây</option>
+                                <option value="10">10 giây</option>
+                                <option value="3600">1 giờ </option>
+                              </select>
+                        </div>
+                    </div>
+                    <div class=" dothi_mfm_1">
+                        <div    class="dothi_atsf">
+                            <canvas id="myChart_atsf"></canvas>
+                            <div id="time-label_atsf"></div>
+                            <label for="update-interval">Cập nhật đồ thị mỗi:</label>
+                            <select name="update-interval" id="update-interval" onchange="updateInterval_atsf(this.value)">
+                                <option value="5">5 giây</option>
+                                <option value="10">10 giây</option>
+                                <option value="3600">1 giờ </option>
+                              </select>
+                        </div>
+                        <div    class="dothi_genf">
+                            <canvas id="myChart_genf"></canvas>
+                            <div id="time-label_genf"></div>
+                            <label for="update-interval">Cập nhật đồ thị mỗi:</label>
+                            <select name="update-interval" id="update-interval" onchange="updateInterval_genf(this.value)">
+                                <option value="5">5 giây</option>
+                                <option value="10">10 giây</option>
+                                <option value="3600">1 giờ </option>
+                              </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!--  -->
+    <!-- start mfm  -->
+    
+    <div class="tabPanel">
+        <div class="mfm383a" >
+            <div class="dienappha" >
+                <div class="dienappha_1">
+                    <h2> Điện áp L1_N: <span id="dienapV1N" >000 </span> V </h2>
+                    <h2> Điện áp L2_N: <span id="dienapV2N" >000 </span> V </h2>
+                    <h2> Điện áp L3_N: <span id="dienapV3N" >000 </span> V </h2>
+                    <h2> Công suất P1 : <span id="congsuatP1" >000 </span> KW </h2>
+                    <h2> Công suất P2:  <span id="congsuatP2" >000 </span> KW </h2>
+                    <h2> Công suất P3:  <span id="congsuatP3" >000 </span> KW </h2>
+
+                </div>
+            </div>
+            <div class="xxnn" >
+                <div class="col3_1" >
+                    <div class="dienapday" >
+                        <div class="dienapday_1">
+                            <h2> Điện áp L1_L2: <span id="dienapV12" >000 </span> V </h2>
+                            <h2> Điện áp L2_L3: <span id="dienapV23" >000 </span> V </h2>
+                            <h2> Điện áp L3_L1: <span id="dienapV31" >000 </span> V </h2>                      
+                        </div>
+                    </div>
+                    <div class="congsuatS" >
+                        <div class="congsuatS_1">
+                            <h2>Công suất biểu kiến S1 : <span id="congsuatbieukienS1" >000 </span> KVA </h2>
+                            <h2>Công suất biểu kiến S2:  <span id="congsuatbieukienS2" >000 </span> KVA </h2>
+                            <h2>Công suất biểu kiến S3:  <span id="congsuatbieukienS3" >000 </span> KVA </h2>            
+                        </div>
+                    </div>
+                    <div class="congsuatQ" >
+                        <div class="congsuatQ_1">
+                            <h2> Công suất phản kháng Q1 : <span id="congsuatphankhangQ1" >000 </span> KVAR </h2>
+                            <h2> Công suất phản kháng Q2:  <span id="congsuatphankhangQ2" >000 </span> KVAR </h2>
+                            <h2> Công suất phản kháng Q3:  <span id="congsuatphankhangQ3" >000 </span> KVAR </h2>            
+                        </div>
+                    </div>
+                </div>
+                <div class="col3_2" >
+                    <div class="dongdien" >
+                        <div class="dongdien_1">
+                            <h2> Dòng điện I1 : <span id="dongdienI1" >000 </span> A </h2>
+                            <h2> Dòng điện I2:  <span id="dongdienI2" >000 </span> A </h2>
+                            <h2> Dòng điện I3:  <span id="dongdienI3" >000 </span> A </h2>            
+                        </div>
+                    </div>
+                    <div class="hesocongsuat" >
+                        <div class="hesocongsuat_1">
+                            <h2> Hệ số công suất PF1 : <span id="hesocongsuatPF1" >000 </span> V </h2>
+                            <h2> Hệ số công suất PF2:  <span id="hesocongsuatPF2" >000 </span> V </h2>
+                            <h2> Hệ số công suất PF3:  <span id="hesocongsuatPF3" >000 </span> V </h2>            
+                        </div>
+                    </div>
+                    <div class="tanso-cstieuthu" >
+                        <div class="tanso-cstieuthu_1">
+                            <h2> Tần số F : <span id="tansoF" >000 </span> HZ </h2>
+                            <h2> Công suất tiêu thụ :  <span id="congsuatieuthu" >000 </span> KWH </h2>            
+                        </div>
+                    </div>
+            </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="tabPanel">
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+        <div class="dothi">
+             <!--///////////////////////////////////////////////  -->
+            <div class=" dothi_mfm_1">
+                <div    class="dothi_mfm_V">
+                    <canvas id="myChart_mfm_V"></canvas>
+                    <div id="time-label_V"></div>
+                    <label for="update-interval">Cập nhật đồ thị mỗi:</label>
+                    <select name="update-interval" id="update-interval" onchange="updateInterval_V(this.value)">
+                        <option value="5">5 giây</option>
+                        <option value="10">10 giây</option>
+                        <option value="3600">1 giờ </option>
+                      </select>
+                </div>
+                <div    class="dothi_mfm_wire">
+                    <canvas id="myChart_mfm_wire"></canvas>
+                    <div id="time-label_wire"></div> 
+                    <label for="update-interval">Cập nhật đồ thị mỗi:</label>
+                    <select name="update-interval" id="update-interval" onchange="updateInterval_wire(this.value)">
+                        <option value="5">5 giây</option>
+                        <option value="10">10 giây</option>
+                        <option value="3600">1 giờ </option>
+                      </select> 
+                </div>
+            </div>
+            <!--///////////////////////////////////////////////  -->
+            <div class=" dothi_mfm_1">
+                <div    class="dothi_mfm_P">
+                    <canvas id="myChart_mfm_P"></canvas>
+                    <div id="time-label_mfm_P"></div>
+                    <label for="update-interval">Cập nhật đồ thị mỗi:</label>
+                    <select name="update-interval" id="update-interval" onchange="updateInterval_P(this.value)">
+                        <option value="5">5 giây</option>
+                        <option value="10">10 giây</option>
+                        <option value="3600">1 giờ </option>
+                      </select>
+                </div>
+                <div    class="dothi_mfm_PF">
+                    <canvas id="myChart_mfm_PF"></canvas>
+                    <div id="time-label_mfm_PF"></div>
+                    <label for="update-interval">Cập nhật đồ thị mỗi:</label>
+                    <select name="update-interval" id="update-interval" onchange="updateInterval_PF(this.value)">
+                        <option value="5">5 giây</option>
+                        <option value="10">10 giây</option>
+                        <option value="3600">1 giờ </option>
+                      </select>
+                </div>
+            </div>
+            <div class=" dothi_mfm_1">
+                <div    class="dothi_mfm_Q">
+                    <canvas id="myChart_mfm_Q"></canvas>
+                    <div id="time-label_mfm_Q"></div>
+                    <label for="update-interval">Cập nhật đồ thị mỗi:</label>
+                    <select name="update-interval" id="update-interval" onchange="updateInterval_Q(this.value)">
+                        <option value="5">5 giây</option>
+                        <option value="10">10 giây</option>
+                        <option value="3600">1 giờ </option>
+                      </select>
+                </div>
+                <div    class="dothi_mfm_S">
+                    <canvas id="myChart_mfm_S"></canvas>
+                    <div id="time-label_mfm_S"></div>
+                    <label for="update-interval">Cập nhật đồ thị mỗi:</label>
+                    <select name="update-interval" id="update-interval" onchange="updateInterval_S(this.value)">
+                        <option value="5">5 giây</option>
+                        <option value="10">10 giây</option>
+                        <option value="3600">1 giờ </option>
+                      </select>
+                </div>
+            </div>
+            <div class=" dothi_mfm_1">
+                <div    class="dothi_mfm_F">
+                    <canvas id="myChart_mfm_F"></canvas>
+                    <div id="time-label_mfm_F"></div>
+                    <label for="update-interval">Cập nhật đồ thị mỗi:</label>
+                    <select name="update-interval" id="update-interval" onchange="updateInterval_F(this.value)">
+                        <option value="5">5 giây</option>
+                        <option value="10">10 giây</option>
+                        <option value="3600">1 giờ </option>
+                      </select>
+                </div>
+                <div    class="dothi_mfm_KWH">
+                    <canvas id="myChart_mfm_KWH"></canvas>
+                    <div id="time-label_mfm_KWH"></div>
+                    <label for="update-interval">Cập nhật đồ thị mỗi:</label>
+                    <select name="update-interval" id="update-interval" onchange="updateInterval_KWH(this.value)">
+                        <option value="5">5 giây</option>
+                        <option value="10">10 giây</option>
+                        <option value="3600">1 giờ </option>
+                      </select>
+                </div>
+            </div>
+            <div class=" dothi_mfm_1">
+                <div    class="dothi_mfm_I">
+                    <canvas id="myChart_mfm_I"></canvas>
+                    <div id="time-label_mfm_I"></div>
+                    <label for="update-interval">Cập nhật đồ thị mỗi:</label>
+                    <select name="update-interval" id="update-interval" onchange="updateInterval_I(this.value)">
+                        <option value="5">5 giây</option>
+                        <option value="10">10 giây</option>
+                        <option value="3600">1 giờ </option>
+                      </select>
+                </div>
+            </div>
+            <!--///////////////////////////////////////////////  -->
+        </div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+    </div>
+    <!-- end mfm -->
+    <!-- start atscontroller -->
+
+
+    <!-- start comap -->
+    <div class="tabPanel">
+        <div class="xuatdulieu">
+
+           
+            <div class="comap" >
+                <div class="comap_box"   >
+                    <div class="thongso" >
+                        <div class="icon">
+                            <i  class="fa-solid fa-car-battery">            </i>
+                        </div>
+                        <div class="dulieu">
+                            <h2 > Battery Volatge   :<span id="Battery_Volatge" >000 </span> V </h2>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="thongso" >
+                        <div class="icon">
+                            <i class="fa-solid fa-circle-exclamation"></i>            :</i>
+                        </div>
+                        <div class="dulieu">
+                            <h2 > Oil Pressure  :<span id="Oil_Pressure" >000 </span> BAR </h2>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="thongso" >
+                        <div class="icon">
+                            <i class="fa-solid fa-gauge-simple"></i>            </i>
+                        </div>
+                        <div class="dulieu">
+                            <h2 > RPM   :<span id="RPM" >0000 </span> V/P </h2>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="comap_box"   >
+                    <div class="thongso" >
+                        <div class="icon">
+                            <i class="fa-solid fa-gas-pump"></i>            :</i>
+                        </div>
+                        <div class="dulieu">
+                            <h2  > Fuel  :<span id="Fuel" >000 </span> % </h2>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="thongso" >
+                        <div class="icon">
+                            <i class="fa-sharp fa-solid fa-screwdriver-wrench"></i>            :</i>
+                        </div>
+                        <div class="dulieu">
+                            <h2 > Maintain  :<span id="Maintain" >000 </span>  </h2>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="thongso" >
+                        <div class="icon">
+                            <i class="fa-solid fa-play"></i>            :</i>
+                        </div>
+                        <div class="dulieu">
+                            <h2 > Numstart  :<span id="Numstart" >000 </span> Lần </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="comap_box"   >
+                    <div class="thongso" >
+                        <div class="icon">
+                            <i class="fa-solid fa-temperature-three-quarters"></i>            :</i>
+                        </div>
+                        <div class="dulieu">
+                            <h2 > Temp  :<span id="Temp" >000 </span> *C </h2>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="thongso" >
+                        <div class="icon">
+                            <i class="fa-solid fa-clock"></i>            :</i>
+                        </div>
+                        <div class="dulieu">
+                            <h2 > Hour  :<span id="Hour" > 000 </span> h </h2>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <!--  -->
+                    <div class="thongso" >
+                        <div class="icon">
+                            <i class="fa-solid fa-leaf"></i>            :</i>
+                        </div>
+                        <div class="dulieu">
+                            <h2 > Co2       :<span id="Co2" > 000</span>  </h2>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                
+                <!--  -->
+    
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="tabPanel">
+        <!-- <div class="dothi">
+            <div class=" dothi_mfm_1">
+                <div    class="dothi_fuel">
+                    <canvas id="myChart_fuel"></canvas>
+                    <div id="time-label_fuel"></div>
+                    <div id="time-label_fuel2"></div>
+                    <label for="update-interval">Cập nhật đồ thị mỗi:</label>
+                    <select name="update-interval" id="update-interval" onchange="updateInterval_fuel(this.value)">
+                        <option value="5">5 giây</option>
+                        <option value="10">10 giây</option>
+                        <option value="3600">1 giờ </option>
+                      </select>
+                </div>
+                <div    class="dothi_rpm">
+                    <canvas id="myChart_rpm"></canvas>
+                    <div id="time-label_rpm"></div>
+                    <label for="update-interval">Cập nhật đồ thị mỗi:</label>
+                    <select name="update-interval" id="update-interval" onchange="updateInterval_rpm(this.value)">
+                        <option value="5">5 giây</option>
+                        <option value="10">10 giây</option>
+                        <option value="3600">1 giờ </option>
+                      </select>
+                </div>
+            </div>
+            <div class=" dothi_mfm_1">
+                <div    class="dothi_battery">
+                    <canvas id="myChart_battery"></canvas>
+                    <div id="time-label_battery"></div>
+                    <label for="update-interval">Cập nhật đồ thị mỗi:</label>
+                    <select name="update-interval" id="update-interval" onchange="updateInterval_battery(this.value)">
+                        <option value="5">5 giây</option>
+                        <option value="10">10 giây</option>
+                        <option value="3600">1 giờ </option>
+                      </select>
+                </div>
+                <div    class="dothi_temp">
+                    <canvas id="myChart_temp"></canvas>
+                    <div id="time-label_temp"></div>
+                    <label for="update-interval">Cập nhật đồ thị mỗi:</label>
+                    <select name="update-interval" id="update-interval" onchange="updateInterval_temp(this.value)">
+                        <option value="5">5 giây</option>
+                        <option value="10">10 giây</option>
+                        <option value="3600">1 giờ </option>
+                      </select>
+                </div>
+            </div>
+            <div class=" dothi_mfm_1">
+                <div    class="dothi_oil">
+                    <canvas id="myChart_oil"></canvas>
+                    <div id="time-label_oil"></div>
+                    <label for="update-interval">Cập nhật đồ thị mỗi:</label>
+                    <select name="update-interval" id="update-interval" onchange="updateInterval_oil(this.value)">
+                        <option value="5">5 giây</option>
+                        <option value="10">10 giây</option>
+                        <option value="3600">1 giờ </option>
+                      </select>
+                </div>
+                <div    class="dothi_co2">
+                    <canvas id="myChart_co2"></canvas>
+                    <div id="time-label_co2"></div>
+                    <label for="update-interval">Cập nhật đồ thị mỗi:</label>
+                    <select name="update-interval" id="update-interval" onchange="updateInterval_co2(this.value)">
+                        <option value="5">5 giây</option>
+                        <option value="10">10 giây</option>
+                        <option value="3600">1 giờ </option>
+                      </select>
+                </div>
+            </div>
+
+        </div> -->
+        <div class="dothigau" >
+            <div class="dothigau2">
+                <div id='myDiv1'> <!-- Plotly chart will be drawn inside this DIV -->
+                    <div id="time-label_fuel"></div>                  
+                </div>               
+                <div id='myDiv2'><!-- Plotly chart will be drawn inside this DIV -->
+                    <div id="time-label_battery"></div>              
+                </div>
+            </div>
+            <div class="dothigau2">
+                <div id='myDiv3'> <!-- Plotly chart will be drawn inside this DIV -->
+                    <div id="time-label_rpm"></div>                  
+                </div>               
+                <div id='myDiv4'><!-- Plotly chart will be drawn inside this DIV -->
+                    <div id="time-label_co2"></div>              
+                </div>
+            </div>
+            <div class="dothigau2">
+                <div id='myDiv5'> <!-- Plotly chart will be drawn inside this DIV -->
+                    <div id="time-label_temp"></div>                  
+                </div>               
+                <div id='myDiv6'><!-- Plotly chart will be drawn inside this DIV -->
+                    <div id="time-label_oil"></div>              
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 
+
+     -->
+     <div class="tabPanel">
+        <div class="nutnhanxuat" >
+            <button class="nutnhanxuat_1" id="exportBtn" onclick= "goToLink()">Xuất dữ liệu</button>
+        </div>
+        <div class="history">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSQLJgyFdyaifPlBoEwgFPbPSyauASruYMNVy0VLu31kr2S9BW4HnMsjBrnYzVBzuTJkP2iyvqD56lU/pubhtml?widget=true&amp;headers=false"></iframe>
+
+       </div>
+    </div>
+     <div class="tabPanel">
+
+        <!-- <div class="intro" > -->
+        <div class="detai" >
+            <h1 style="margin-top: 0%;" >ĐỒ ÁN TỐT NGHIỆP    </h1>
+            <h2>ỨNG DỤNG BMS GIÁM SÁT NGUỒN DỰ PHÒNG MÁY PHÁT VÀ ATS</h2>
+            <div class="member">
+                <div class="thanhvien"> 
+                    <p>SVTH</p>
+                    <p>Nguyễn Hải Đăng 19142006</p>
+                    <img class="ha" src="./img/DSC_1883 (1).jpg" alt="">
+                </div>
+                <div class="thanhvien"> 
+                    <p>GVHD</p>
+                    <p> Ts. Nguyễn Ngọc Âu </p>
+                    <img class="ha" src="./img/tha (1).png" alt="">
+                </div>
+                <div class="thanhvien"> 
+                    <p>SVTH</p>
+                    <p>Phan Thành Tính 19142251</p>
+                    <img class="ha" src="./img/9d0da08b6cddbd83e4cc (1).jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+
+</div>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.1/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/toorshia/justgage/raphael-2.1.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/toorshia/justgage/justgage.js"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src='https://cdn.plot.ly/plotly-2.20.0.min.js'></script>
+<script src="app.js"></script>
+<script src="getdata.js"></script>
+<script src="getdata_mfm.js"></script>
+<script src="getdata_ats.js"></script>
+<script src="graphic_mfm2.js"></script>
+<script src="getdata_comap.js"></script>
+<script src="graphic_ats.js"></script>
+<script src="graphic_fire.js"></script>
+<script src="on-off.js"></script>
+<script src="nguon.js"></script>
+<script src="coloricon.js"></script>
+<script src="ddc.js"></script>
+<!-- <script src="graphic_comap2.js"></script> -->
+<script src="ggaau.js"></script>
+<script src="excell.js"></script>
+<script >
+var tabButtons=document.querySelectorAll(".tabContainer .buttonContainer button");
+var tabPanels=document.querySelectorAll(".tabContainer  .tabPanel");
+
+function showPanel(panelIndex,colorCode) {
+    tabButtons.forEach(function(node){
+        node.style.backgroundColor="";
+        node.style.color="";
+    });
+    tabButtons[panelIndex].style.backgroundColor="#FFFF99";
+    tabButtons[panelIndex].style.color="black";
+    tabPanels.forEach(function(node){
+        node.style.display="none";
+    });
+    tabPanels[panelIndex].style.display="block";
+    tabPanels[panelIndex].style.backgroundColor=colorCode;
+}
+showPanel(0,'#ffffff');
+</script>
+</body>
+</html>

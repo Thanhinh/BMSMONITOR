@@ -1,0 +1,1182 @@
+
+body
+{
+    /* width: 100%; */
+    /* height: 100%; */
+}
+iframe {
+    width: 100%;
+    height:  55vh;
+}
+.history{
+
+    margin-top: 20px;
+    width: 100%;
+    height: 55vh;
+    /* background-color: #4CAF50; */
+}
+
+.red-text {
+    color: red;
+  }
+.title{
+    display: inline;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*  */
+/* .img_gen {
+    transition: background-color 2s ease;
+  }
+  
+  .img_gen:hover {
+    background-color: green;
+  } */
+  .img_gen {
+    /* max-width: 100px; */
+    animation: move-up-down 1s ease infinite;
+  }
+  
+  @keyframes move-up-down {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .img_ats {
+    /* max-width: 100px; */
+    animation: move-up-down 1s ease infinite;
+  }
+  
+  @keyframes move-up-down {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+/*  */
+.detai h1{
+  color: RGBA( 30, 144, 255, 1 );
+  /* font-weight: 400; */
+}
+.detai h2{
+  color:RGBA( 30, 144, 255, 1 );
+  /* font-weight: 400; */
+ font-weight: bolder;
+ font-size: 1.2em;
+}
+.anh1{
+    width: 40%;
+    height: 100%;
+}
+.anh2{
+    width: 40%;
+    /* height: 200px; */
+    height: 100%;
+}
+.anh3{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.tabContainer{
+    width: 100%;
+    height: 350px;
+
+}
+.tabContainer .buttonContainer{
+    height: 15%;
+}
+.tabContainer .buttonContainer button{
+    width: 12.5%;
+    height: 100%;
+    float: left;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 90%;
+    background-color: #eee;
+    border: 1px solid black;
+    /* position: fixed */
+
+
+}
+.tabContainer .buttonContainer button:hover{
+    background-color: #d7d4d4;
+}
+.tabContainer .tabPanel{
+    height: 85%;
+    background-color: gray;
+    color: black;
+    text-align: center;
+    padding-top: 30px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 22px;
+    display: none;
+}
+/* tieude */
+
+.four_inf
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+}
+.tieude {
+    flex: 1;
+    justify-content: center;
+    align-items: center; /* căn giữa theo chiều dọc */
+    display: flex;
+    background-color: #FFCCFF;
+    height: 50px;
+    text-align: center; /* căn giữa theo chiều ngang */
+    border: 1px solid black;
+
+  }
+  .dienappha_1, .dienapday_1,.congsuatS_1,.congsuatQ_1 ,.dongdien_1,.hesocongsuat_1,.tanso-cstieuthu_1
+  ,.giatripha_NL,.giatriday_NL,.tanso_1,.giatripha_gen,.giatriday_gen,.tansogen1{
+    transition: transform 0.5s;
+  }
+  
+  .dienappha_1:hover ,.dienapday_1:hover,.congsuatS_1:hover,.congsuatQ_1:hover ,.dongdien_1:hover,.hesocongsuat_1:hover,.tanso-cstieuthu_1:hover
+  ,.giatripha_NL:hover,.giatriday_NL:hover,.tanso_1:hover,.giatripha_gen:hover,.giatriday_gen:hover,.tansogen1:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: RGBA( 0, 250, 154, 1 );
+  }
+
+/* endtieude */
+/* start intro */
+.member{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 3px solid  #FFCCFF;
+}
+.thanhvien{
+  color: RGBA( 30, 144, 255, 1 );
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid  #FFCCFF;
+    font-size: 1.2em;
+}
+.thanhvien img{
+    border: 4px solid  #FFCCFF;
+}
+.thanhvien p{
+
+    margin-top: 0;
+}
+.ha{
+
+}
+/* end intro */
+/* start mfm */
+.mfm383a
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.col3_1
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.col3_1 h2{
+    font-size: 1.8em;
+}
+.col3_2 h2{
+    font-size: 1.8em;
+}
+.xxnn
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.col3_2
+{   
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.dienappha
+{
+    width: 40%;
+    height: 610px;
+    background-color:#CCFF33;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    border: 4px solid yellow;
+
+
+}
+.dienappha_1{
+    width: 90%;
+    height: 500px;
+    background-color: white;
+    margin-top: 70px;
+    border-radius: 20px;
+    font-size: 0.7em;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+
+}
+.dienapday
+{
+    width: 100%;
+    height: 300px;
+    background-color:#CCFF33;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2px;
+    border: 4px solid yellow;
+    background-color: rgb(255,250,205);
+}
+.dienapday_1{
+    width: 90%;
+    height: 250px;
+    background-color: white;
+    margin-top: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 0.5em;
+    background-color: rgb(255,240,245) ;
+}
+.dongdien
+{
+    width: 100%;
+    height: 300px;
+    background-color:#CCFF33;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    border: 4px solid yellow;
+    background-color: rgb(224,255,255);
+}
+.dongdien_1{
+    width: 90%;
+    height: 250px;
+    background-color: white;
+    margin-top: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 0.5em;
+    background-color: rgb(255,240,245) ;
+
+}
+.congsuatS
+{
+    width: 100%;
+    height: 300px;
+    background-color:#CCFF33;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 4px solid yellow;
+    background-color: rgb(255,250,205);
+
+}
+.congsuatS_1{
+    width: 90%;
+    height: 250px;
+    background-color: white;
+    margin-top: 40px;
+    border-radius: 20px;
+    font-size: 0.5em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(255,240,245) ;
+}
+.congsuatQ
+{
+    width: 100%;
+    height: 300px;
+    background-color:#CCFF33;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 4px solid yellow;
+    background-color: rgb(255,250,205);
+}
+.congsuatQ_1{
+    width: 90%;
+    height: 250px;
+    margin-top: 40px;
+    border-radius: 20px;
+    font-size: 0.5em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(255,240,245) ;
+}.hesocongsuat
+{
+    width: 100%;
+    height: 300px;
+    background-color:#CCFF33;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    border: 4px solid yellow;
+    background-color: rgb(224,255,255);
+}
+.hesocongsuat_1{
+    width: 90%;
+    height: 250px;
+    margin-top: 40px;
+    border-radius: 20px;
+    font-size: 0.5em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(255,240,245) ;
+}.tanso-cstieuthu
+{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(224,255,255);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    border: 4px solid yellow;
+}
+.tanso-cstieuthu_1{
+    width: 90%;
+    height: 250px;
+    background-color: white;
+    margin-top: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 0.5em;
+    background-color: rgb(255,240,245) ;
+
+    
+}
+
+/* end mfm */
+/* ats */
+.atscontroller
+{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+.img_ats
+{
+    width: 30%;
+    height: 300px;
+}
+.img_gen
+{
+    width: 30%;
+    height: 300px;
+}
+.minhhoa
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 5px solid #CC99FF;
+    border-radius: 5px;
+
+}
+.minhhoa1
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 5px solid #CC99FF;
+    border-radius: 5px;
+    /* width: 50%;
+    height: 393px;
+    border: 5px solid #CC99FF;
+    border-radius: 5px; */
+}
+.giatri_NL
+{
+    width: 70%;
+    background-color: red;
+    height: 300px;
+    display: flex;
+    flex-direction: column ;   
+}
+
+.giatri_NL1
+{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.giatripha_NL
+{
+    width: 47%;
+    height: 180px;
+    background-color:#FFCCFF;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.giatriday_NL
+{
+    width: 47%;
+    height: 180px;
+    background-color:#CCCC99 ;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: black; 
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.tanso_1
+{
+    width: 100% ;
+    height: 100px;
+    background-color:#FFFF99;
+    /* margin-top: 200px; */
+}
+/*  */
+.tong{
+  display: flex;
+  justify-content:space-around;
+  flex-direction: row;
+}
+.nguon_dang_dung{
+    margin-top: -20px;
+}
+.giatri_gen
+{
+    width: 70%;
+    background-color: red;
+    height: 300px;
+    display: flex;
+    flex-direction: column ;   
+}
+
+.giatri_gen1
+{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.giatripha_gen
+{
+    width: 47%;
+    height: 180px;
+    background-color:#FFCCFF;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    margin-top: 15px;
+    border-radius: 10px;
+    
+}
+.giatriday_gen
+{
+    width: 47%;
+    height:180px;
+    background-color:#CCCC99 ;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: black; 
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.tansogen1
+{
+    width: 100% ;
+    height: 100px;
+    background-color: #FFFF99;
+    /* margin-top: 200px; */
+}
+
+.info_ats
+{
+    background-color: red;
+}
+
+.ats{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.gen{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;   
+}
+/* end ats */
+/* comap */
+.xuatdulieu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.thongso
+{   
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.icon{
+    font-size: 40px;
+    margin-left: 5%;
+}
+
+h2{
+    font-weight: normal;
+    font-size: 1em;
+}
+.comap{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.comap_box{
+    width: 33%;
+    border: 2px solid #CC99FF;
+    border-radius: 5px;
+}
+.dulieu span
+{
+    margin-right: 0%;
+}
+.nutnhanxuat
+{
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
+.nutnhanxuat_1 {
+    background-color: #4CAF50; /* Màu nền */
+    border: none; /* Xóa đường viền */
+    color: white; /* Màu chữ */
+    padding: 10px 20px; /* Kích thước đệm (padding) */
+    text-align: center; /* Căn giữa nội dung */
+    text-decoration: none; /* Xóa gạch chân */
+    display: inline-block; /* Hiển thị trên cùng 1 dòng */
+    font-size: 16px; /* Cỡ chữ */
+    margin: 4px 2px; /* Khoảng cách giữa các nút */
+    cursor: pointer; /* Biểu tượng con trỏ */
+    transition-duration: 0.4s; /* Thời gian chuyển đổi */
+  }
+  
+  .nutnhanxuat_1:hover {
+    background-color: white; /* Màu nền */
+    color: black; /* Màu chữ */
+    border: 2px solid #4CAF50; /* Đường viền */
+  }
+/* comap */
+/* Ẩn checkbox đi */
+/* dothimfm */
+/* .dothi
+{
+    width: 100%;
+    height: 100%;
+}
+.dothi_mfm
+{
+    width: 100%;
+    height: 100%;
+} */
+.dothi{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.dothi_mfm_1
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.dothi_mfm_V
+{
+    /* display: flex;
+    flex-direction: column; */
+    width: 50%;
+    border: 2px solid #CC99FF;
+    border-radius: 10px;
+}
+.dothi_rpm{
+    width:50%;
+    border: 2px solid #CC99FF;
+    border-radius: 10px; 
+}
+.dothi_mfm_P
+{
+    width:50%;
+    border: 2px solid #CC99FF;
+    border-radius: 10px;
+}
+.dothi_mfm_PF
+{
+    width:50%;
+    border: 3px solid #CC99FF;
+    border-radius: 10px;
+}
+.dothi_ats_VWIRE{
+    width:50%;
+    border: 3px solid #CC99FF;
+    border-radius: 10px;
+}
+.dothi_oil{
+    width:50%;
+    border: 3px solid #CC99FF;
+    border-radius: 10px; 
+}
+.dothi_co2{
+    width:50%;
+    border: 3px solid #CC99FF;
+    border-radius: 10px; 
+}
+.dothi_temp{
+    width:50%;
+    border: 3px solid #CC99FF;
+    border-radius: 10px; 
+}
+.dothi_battery{
+    width:50%;
+    border: 3px solid #CC99FF;
+    border-radius: 10px; 
+}
+.dothi_genvphase{
+    width:50%;
+    border: 3px solid #CC99FF;
+    border-radius: 10px; 
+}
+.dothi_genvwire{
+    width:50%;
+    border: 3px solid #CC99FF;
+    border-radius: 10px; 
+}
+.dothi_mfm_Q
+{
+    width:50%;
+    border: 3px solid #CC99FF;
+    border-radius: 10px;
+}
+.dothi_atsf{
+    width:50%;
+    border: 3px solid #CC99FF;
+    border-radius: 10px;  
+}
+.dothi_fuel{
+    width:50%;
+    border: 3px solid #CC99FF;
+    border-radius: 10px;  
+}
+.dothi_genf{
+    width:50%;
+    border: 3px solid #CC99FF;
+    border-radius: 10px;  
+}
+.dothi_mfm_I
+{
+    width:50%;
+    border: 3px solid #CC99FF;
+    border-radius: 10px;
+}
+.dothi_mfm_KWH
+{
+    width:50%;
+    border: 3px solid #CC99FF;
+    border-radius: 10px;
+}
+.dothi_mfm_S
+{
+    width:50%;
+    border: 3px solid #CC99FF;
+    border-radius: 10px;
+}
+.dothi_mfm_F
+{
+    width:50%;
+    border: 3px solid #CC99FF;
+    border-radius: 10px;
+}
+.dothi_mfm_wire
+{
+    width:50%;
+    border: 3px solid #CC99FF;
+    border-radius: 10px;
+}
+.dothi_ats_V{
+    width:50%;
+    border: 3px solid #CC99FF;
+    border-radius: 10px; 
+}
+.dothi_ats_VPHASE{
+    width:50%;
+    border: 3px solid #CC99FF;
+    border-radius: 10px; 
+}
+.dothi_genvphase{
+    width:50%;
+    border: 3px solid #CC99FF;
+    border-radius: 10px; 
+}
+.dothi_gen_vphase{
+    width:50%;
+    border: 3px solid #CC99FF;
+    border-radius: 10px; 
+}
+.dothi_comap
+{
+    display: flex;
+    flex-direction: row;
+    
+}
+.dothi_comap_fuel{
+    width: 50%;
+}
+.dothi_comap_td
+{
+    width:100%;
+}
+/* end dothi mfm */
+/* select {
+    font-size: 16px; 
+    padding: 8px 30px 8px 16px;
+    border: none;
+    border-radius: 4px; 
+    background-color: #f1f1f1; 
+    appearance: none; 
+    -webkit-appearance: none; 
+    color: #333; 
+    cursor: pointer; 
+    transition-duration: 0.4s; 
+  }
+  
+  select:focus {
+    background-color: #ddd; 
+    outline: none; 
+  }
+  
+  select option {
+    background-color: white; 
+    color: #333;
+  }
+  
+  select option:hover {
+    background-color: #f1f1f1; 
+  } */
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4CAF50;
+    /* background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'><path fill='%23fff' d='M2 0L0 2h4zm0 5L0 3h4z'/></svg>"); */
+    background-position: right 10px top 50%;
+    background-repeat: no-repeat;
+  }
+  
+  /* Thiết lập kiểu cho các option trong thẻ select */
+  select option {
+    color: #333;
+    background-color: #fff;
+  }
+  
+  /* Thiết lập kiểu cho hiệu ứng khi nhấn vào thẻ select */
+  select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #4CAF50;
+  }
+  
+  /* Thiết lập kiểu cho hiệu ứng khi nhấn vào option */
+  select option:checked {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  /*  */
+  .btn-on, .btn-off {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    background-color: #ccc;
+    box-shadow: 0px 5px 0px 0px #b2b2b2;
+  }
+  .btn-onn, .btn-offf {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    background-color: #ccc;
+    box-shadow: 0px 5px 0px 0px #b2b2b2;
+  }
+  .btn-on.active {
+    background-color: #2ecc71;
+  }
+  
+  .btn-off.active {
+    background-color: red;
+  }
+  .btn-onn.activee {
+    background-color: #2ecc71;
+  }
+  
+  .btn-offf.activee {
+    background-color: red;
+  }
+  .btn-off.active:hover, .btn-on.active:hover {
+    cursor: pointer;
+  }
+  
+  .btn-on.active:focus, .btn-off.active:focus {
+    outline: none;
+  }
+  .btn-offf.activee:hover, .btn-onn.activee:hover {
+    cursor: pointer;
+  }
+  
+  .btn-onn.activee:focus, .btn-offf.activee:focus {
+    outline: none;
+  }
+  /*css hieuung  */
+
+
+
+  /*  */
+  .fa-car-battery {
+    display: inline-block;
+    font-size: 30px;
+    background: linear-gradient(to right, #1abc9c 0%, #ff5e3a 50%, #ff2f1a 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: pulse 2s ease-in-out infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  /*  */
+  .fa-leaf {
+    display: inline-block;
+    font-size: 40px;
+    color: black;
+    animation: changeColorgr 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes changeColorgr {
+    0% {
+      color: black;
+    }
+    100% {
+      color: green;
+    }
+  }
+  .fa-temperature-three-quarters {
+    display: inline-block;
+    font-size: 40px;
+    color: black;
+    animation: changeColored 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes changeColored {
+    0% {
+      color: black;
+    }
+    100% {
+      color: red;
+    }
+  }
+
+  .fa-gauge-simple {
+    display: inline-block;
+    font-size: 40px;
+    color:  yellow;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .fa-screwdriver-wrench {
+    display: inline-block;
+    font-size: 40px;
+    color: rgba(69, 141, 30, 0.3);
+    opacity: 0;
+    animation: fadeInOut 2s ease-in-out infinite;
+    color:   }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+
+  .fa-play {
+    display: inline-block;
+    font-size: 40px;
+    color:  RGBA( 0, 255, 255, 1 );
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  /*  */
+  .fa-circle-exclamation {
+    transform: scale(0);
+    animation: fadeIn 4s ease-in-out forwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    color: rgba(120, 253, 112, 0.8);
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  .fa-gas-pump {
+    color: green;
+    animation: pumpColor 8s ease-in-out infinite alternate;
+  }
+  
+  @keyframes pumpColor {
+    0% {
+      color: green;
+    }
+    50% {
+      color: yellow;
+    }
+    100% {
+      color: red;
+    }
+  }
+  .fa-clock {
+    /* max-width: 100px; */
+    animation: move-up-down 1s ease infinite;
+    color: rgba(112, 253, 252, 0.8);
+  }
+  
+  @keyframes move-up-down {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .dothigau{
+    margin-top: -1%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .dothigau2{
+    display: flex;
+    width: 100%;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+
+  }
+  
+  #myDiv1{
+    border: 3px solid #FFCCFF;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: RGBA( 224, 255, 255, 1 );
+    font-size: 1.2rem;
+  }
+  #myDiv2{
+    border: 3px solid #FFCCFF;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: RGBA( 224, 255, 255, 1 );
+        font-size: 1.2rem;
+  }
+  #myDiv3{
+    border: 3px solid #FFCCFF;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: RGBA( 224, 255, 255, 1 );
+        font-size: 1.2rem;
+  }
+  #myDiv4{
+    border: 3px solid #FFCCFF;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: RGBA( 224, 255, 255, 1 );
+        font-size: 1.2rem;
+  }
+  #myDiv5{
+    border: 3px solid #FFCCFF;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: RGBA( 224, 255, 255, 1 );
+        font-size: 1.2rem;
+  }
+  #myDiv6{
+    border: 3px solid #FFCCFF;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: RGBA( 224, 255, 255, 1 );
+        font-size: 1.2rem;
+  }
+  .nguondung h2{
+
+    color: black;
+    padding: 10px;
+  }
+ 
+  #dungnguon{
+    font-weight: bold;
+    color: red;
+  }
+  /*  
+  */
+  .icon_off{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: -13%;
+  }
+  .iconc{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .fa-circle{
+
+
+    font-size: 50px;
+  }
+  .red-icon {
+   color: RGBA( 255, 0, 0, 1 );
+  }
+  .blue-icon {
+    color: RGBA( 135, 206, 250, 1 );
+   }
+   .yel-icon {
+    color: RGBA( 255, 255, 0, 1 );
+   }
+ 
